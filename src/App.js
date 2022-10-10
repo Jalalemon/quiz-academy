@@ -7,6 +7,7 @@ import Blogs from './components/blogs/Blogs';
 import Statistics from './components/statistics/Statistics';
 import About from './components/layout/header/about/About';
 import Defaultpik from './components/default/Defaultpik';
+import TopicDetails from './components/topic/TopicDetails';
 
 function App() {
   const router = createBrowserRouter([
@@ -22,6 +23,13 @@ function App() {
           path: '/home',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
+        },
+        {
+          path: '/topicdetails/:topicId',
+          loader: async({params}) =>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
+          },
+          element: <TopicDetails></TopicDetails>
         },
         {
           path: '/blogs',
