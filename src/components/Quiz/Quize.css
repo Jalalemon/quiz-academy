@@ -1,0 +1,26 @@
+.quiz-container{
+   border: 2px solid;
+    width: 280px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 10px;
+   
+}
+.quiz-container img {
+    width: 270px;
+    border-radius: 10px;
+}
+.quiz-details{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.quiz-details button{
+    color: aliceblue;
+    background-color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 40%;
+    font-size: medium;
+}

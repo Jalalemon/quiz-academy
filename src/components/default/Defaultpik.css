@@ -1,0 +1,10 @@
+.default-pik {
+    display: flex;
+    margin: 30px;
+    
+
+}
+.default-pik img {
+    width: 600px;
+    height: 500px;
+}
