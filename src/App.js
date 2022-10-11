@@ -38,6 +38,7 @@ function App() {
         },
         {
           path: '/statistics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statistics></Statistics>
         },
         {
@@ -47,7 +48,7 @@ function App() {
       ]
     },
     {
-      path: '*',element: <h3> this rout not found, please! provide the valid route</h3>
+      path: '*',element: <h1> this rout not found, please! provide the valid route</h1>
     }
    
   ])
