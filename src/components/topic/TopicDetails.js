@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Quiz from '../Quiz/Quiz';
 import Question from './Question/Question';
 
 const TopicDetails = () => {
@@ -7,14 +8,22 @@ const TopicDetails = () => {
     console.log(topic.data.questions);
     const {questions} = topic.data;
     console.log(questions);
-    
-    
+
+    const handleGoToLearn = (questions) => {
+        console.log(questions);
+    }
+
+
     return (
         <div>
            {
-            questions.map(question =><Question key={question.id } question={question}></Question> )
+                questions.map(questionx => <Question key={questionx.id}  questionx={questionx}></Question> )
+           },
+           {
+                <Quiz handleGoToLearn={handleGoToLearn}></Quiz>
            }
         </div>
+       
     );
 };
 

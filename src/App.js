@@ -44,6 +44,9 @@ function App() {
           element: <About></About>
         }
       ]
+    },
+    {
+      path: '*',element: <h3> this rout not found, please! provide the valid route</h3>
     }
    
   ])

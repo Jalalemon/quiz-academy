@@ -1,6 +1,6 @@
 import React from 'react';
 import './Quize.css'
-const Quiz = ({quiz}) => {
+const Quiz = ({ quiz, handleGoToLearn }) => {
     const {name, id, logo, total} =quiz
     return (
         <div className='quiz-container'>
@@ -9,7 +9,7 @@ const Quiz = ({quiz}) => {
            </div>
            <div className="quiz-details">
             <h4>{name} </h4>
-            <button> Go to learn</button>
+                <button onClick={() => handleGoToLearn(id,)}> Go to learn</button>
            </div>
         </div>
     );
