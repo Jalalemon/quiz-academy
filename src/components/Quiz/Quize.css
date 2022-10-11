@@ -25,3 +25,7 @@
     width: 40%;
     font-size: medium;
 }
+.quiz-details a{
+    color: aliceblue;
+    text-decoration: none;
+}

@@ -4,7 +4,7 @@ import'./Header.css'
 const Header = () => {
     return (
         <div className='header-container'>
-            <div></div>
+            <div>Quize Academy</div>
             <div className='header'>
                 <NavLink to='/home'>Home </NavLink>
                 <NavLink to='/blogs'>Blogs</NavLink>

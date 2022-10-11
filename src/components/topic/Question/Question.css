@@ -1,0 +1,13 @@
+.question-option{
+  width: 800px;
+  height: 250px;
+  align-items: center; 
+  margin: 0 auto; 
+  border-radius: 20px;
+  background-color: bisque;
+}
+.question-option p{
+    background-color: aliceblue;
+    padding: 5px;
+  
+}

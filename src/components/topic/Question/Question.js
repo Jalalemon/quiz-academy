@@ -1,19 +1,26 @@
 import React from 'react';
-
+import './Question.css'
 const Question = ({questionx}) => {
-   const {options,id, questions} = questionx
-console.log(questionx.question);
-
+   const {options,id,correctAnswer, questions} = questionx;
+    console.log(questionx);
+    const handleCorrectAnswer = (correctAnswer) =>{
+        
+    }
 
     return (
+
         <div>
 
-            
-            <h3>{questionx.question} </h3>
-          <h5>{options[0]} </h5>
-            <h5> {options[1]}</h5>
-            <h5>{options[2]}</h5>
-            <h5>{options[3]}</h5>  
+           <div className="question-container">
+            </div> 
+            <div className="question-option">
+
+                <h3>{questionx.question} </h3>
+                <p onClick={() =>handleCorrectAnswer(correctAnswer)}>{options[0]} </p>
+                <p> {options[1]}</p>
+                <p>{options[2]}</p>
+                <p>{options[3]}</p>
+                </div> 
 
         
         </div>
