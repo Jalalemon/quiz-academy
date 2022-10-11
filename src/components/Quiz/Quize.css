@@ -29,3 +29,10 @@
     color: aliceblue;
     text-decoration: none;
 }
+
+
+@media only screen and  (max-width: 480px){
+    .quiz-container{
+        margin-top: 30px;
+    }
+}

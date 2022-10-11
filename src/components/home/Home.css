@@ -4,3 +4,14 @@
     grid-template-columns: repeat(4, 1fr);
     margin-top: 5%;
 }
+
+@media only screen and (max-width: 450px) {
+    .quizes {
+        display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 10 auto;
+            padding-left: 30px;
+
+
+    }
+}

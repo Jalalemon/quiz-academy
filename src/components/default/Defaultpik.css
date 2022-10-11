@@ -8,3 +8,18 @@
     width: 600px;
     height: 500px;
 }
+@media only screen and (max-width: 480px) {
+    .default-pik{
+        display: block;
+        font-weight: 100;
+    }
+        .default-pik img {
+            width: 250px;
+            height: 200px;
+            margin: 0 auto;
+
+        }
+        .img-details h1{
+            font-weight: 100;
+        }
+}
