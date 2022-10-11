@@ -1,25 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Question.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingBag} from '@fortawesome/free-solid-svg-icons'
+import Option from '../../option/Option';
+
 const Question = ({questionx}) => {
-   const {options,id,correctAnswer, questions} = questionx;
-    console.log(questionx);
-    const handleCorrectAnswer = (correctAnswer) =>{
-        
+   const {options, correctAnswer, question} = questionx;
+    const handleCorrectAnswer = correctAnswer =>{
+        alert(`The correct Answer of the question is:  ${correctAnswer}`)
     }
-
     return (
-
         <div>
-
            <div className="question-container">
             </div> 
             <div className="question-option">
 
-                <h3>{questionx.question} </h3>
-                <p onClick={() =>handleCorrectAnswer(correctAnswer)}>{options[0]} </p>
-                <p> {options[1]}</p>
-                <p>{options[2]}</p>
-                <p>{options[3]}</p>
+                <div className="question">
+                    <h3>{question} </h3>
+                  
+                <button onClick={() =>handleCorrectAnswer(correctAnswer)}> 
+                    <FontAwesomeIcon icon={faShoppingBag }></FontAwesomeIcon>
+                </button>
+                </div>
+                {
+                    options.map((option) => (
+                        <Option option={option} correctAnswer={correctAnswer}></Option>
+                    ))
+                }
+
+
+
+               
+                {/* <p onClick={() => handleCorrectAnswer(correctAnswer)}>{options[0]} </p>
+                <p onClick={() => handleCorrectAnswer(correctAnswer)}> {options[1]}</p>
+                <p onClick={() => handleCorrectAnswer(correctAnswer)}>{options[2]}</p>
+                <p onClick={() => handleCorrectAnswer(correctAnswer)}>{options[3]}</p> */}
                 </div> 
 
         

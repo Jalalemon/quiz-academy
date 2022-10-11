@@ -5,9 +5,21 @@
   margin: 0 auto; 
   border-radius: 20px;
   background-color: bisque;
+
 }
 .question-option p{
     background-color: aliceblue;
     padding: 5px;
   
+}
+.question{
+    font-display: flex;
+}
+.question button {
+    float: right;
+    padding: 10px;
+    color: yellow;
+    background-color: black;
+    border-radius: 10px;
+
 }

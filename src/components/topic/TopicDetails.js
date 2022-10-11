@@ -5,17 +5,19 @@ import Question from './Question/Question';
 
 const TopicDetails = () => {
     const topic = useLoaderData();
-    const {questions} = topic.data;
-
-
+    const questionAll = topic.data.questions;
   
     return (
         <div>
+          {
+                <h1>Quize of {topic.data.name}</h1>
+          }
+        <ol>
            {
-                questions.map(questionx => <Question key={questionx.id}  questionx={questionx}></Question> )
-           }
+                questionAll.map((questionx => (<Question key={questionx.id}  questionx={questionx}></Question> )
+           ))}
         
-          
+            </ol>
         </div>
        
     );
