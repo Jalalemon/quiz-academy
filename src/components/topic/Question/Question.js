@@ -6,7 +6,8 @@ import Option from '../../option/Option';
 
 const Question = ({questionx}) => {
    const {options, correctAnswer, question} = questionx;
-    const handleCorrectAnswer = correctAnswer =>{
+    const handleCorrectAnswer = correctAnswer =>  {
+
         alert(`The correct Answer of the question is:  ${correctAnswer}`)
     }
     return (
@@ -20,7 +21,9 @@ const Question = ({questionx}) => {
                   
                 <button onClick={() =>handleCorrectAnswer(correctAnswer)}> 
                     <FontAwesomeIcon icon={faShoppingBag }></FontAwesomeIcon>
+                    
                 </button>
+                  
                 </div>
                 {
                     options.map((option) => (

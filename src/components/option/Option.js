@@ -4,17 +4,18 @@ const Option = ({option, correctAnswer}) => {
     console.log(option);
     const [results, setResults] = useState(false);
     
-    const handleClick = (e)=> {
+    const handleClick = (e) => {
         const correctOption = e.target.innerText;
         
         if(correctAnswer === correctOption){
             setResults(true)
+
             alert(true)
         }
         else{
             setResults(false);
             // alert(`${correctAnswer}`);
-            alert(false)
+            alert(false, 'wrong answer diyecho')
         }
     }
     return (
