@@ -1,0 +1,15 @@
+.blogs{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .blogs {
+            width: 80%;
+    
+            margin: 0 auto;
+        }
+    
+}

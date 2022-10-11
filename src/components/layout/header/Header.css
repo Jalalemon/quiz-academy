@@ -24,3 +24,24 @@
 
     
 }
+.quiz{
+    font-weight: bold;
+    padding-left: 10%;
+}
+
+
+@media only screen and (max-width: 480px) {
+.quiz {
+        font-weight: 100;
+        padding-left: 2%;
+    }
+.header a {
+        
+            font-weight: 100;
+            color: aliceblue;
+            margin-right: 10px;
+            justify-items: center;
+    
+    
+        }
+}
