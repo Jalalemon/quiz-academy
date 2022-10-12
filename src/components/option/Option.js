@@ -33,9 +33,11 @@ const Option = ({option, correctAnswer}) => {
     }
     return (
         <div>
-            <input type="checkbox" name="" id="option" />
-            <label onClick={handleClick}
-            >{option} </label>
+           <p>
+                <input type="radio" name="" id="option" />
+                <label onClick={handleClick}
+                >{option} </label>
+           </p>
             
             <ToastContainer />
         </div>

@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Question = ({questionx}) => {
    const {options, correctAnswer, question} = questionx;
     const handleCorrectAnswer = correctAnswer =>  {
-        toast.info(`The correct Answer of the question is:  ${correctAnswer}`
+        toast.info(`The correct Answer of the question is: ${correctAnswer}`
         );
     }
     return (
