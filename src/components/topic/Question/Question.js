@@ -3,12 +3,15 @@ import './Question.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingBag} from '@fortawesome/free-solid-svg-icons'
 import Option from '../../option/Option';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Question = ({questionx}) => {
    const {options, correctAnswer, question} = questionx;
     const handleCorrectAnswer = correctAnswer =>  {
-
-        alert(`The correct Answer of the question is:  ${correctAnswer}`)
+        toast.info(`The correct Answer of the question is:  ${correctAnswer}`
+        );
     }
     return (
         <div>
@@ -21,7 +24,8 @@ const Question = ({questionx}) => {
                   
                 <button onClick={() =>handleCorrectAnswer(correctAnswer)}> 
                     <FontAwesomeIcon icon={faShoppingBag }></FontAwesomeIcon>
-                    
+                        <ToastContainer 
+                        />
                 </button>
                   
                 </div>

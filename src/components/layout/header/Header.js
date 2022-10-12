@@ -7,8 +7,10 @@ const Header = () => {
             <div className='quiz'>Quize Academy</div>
             <div className='header'>
                 
-                <NavLink to='/'>Home </NavLink>
-                <NavLink to='/home'>Topics </NavLink>
+                <NavLink 
+                to='/'>Home </NavLink>
+                <NavLink className={({ isActive }) =>
+                    isActive ? 'active' : undefined} to='/home'>Topics </NavLink>
                 <NavLink to='/blogs'>Blogs</NavLink>
                 <NavLink to='/statistics'>Statistics</NavLink>
 

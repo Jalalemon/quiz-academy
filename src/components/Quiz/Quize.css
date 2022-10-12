@@ -23,6 +23,7 @@
     font-weight: bold;
     border-radius: 5px;
     width: 40%;
+    padding: 1px;
     font-size: medium;
 }
 .quiz-details a{
@@ -30,7 +31,9 @@
     text-decoration: none;
 }
 
-
+.quiz-details button:hover {
+    background-color: cornflowerblue;
+}
 @media only screen and  (max-width: 480px){
     .quiz-container{
         margin-top: 30px;
