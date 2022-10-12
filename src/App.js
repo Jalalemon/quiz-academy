@@ -8,6 +8,7 @@ import Statistics from './components/statistics/Statistics';
 import About from './components/layout/header/about/About';
 import Defaultpik from './components/default/Defaultpik';
 import TopicDetails from './components/topic/TopicDetails';
+import Quiz from './components/Quiz/Quiz';
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +18,7 @@ function App() {
       children: [
         {
           path: '/',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Defaultpik></Defaultpik>
         },
         {
