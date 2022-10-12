@@ -48,7 +48,7 @@ function App() {
       ]
     },
     {
-      path: '*',element: <h1> this rout not found, please! provide the valid route</h1>
+      path: '*',element: <h1> 404: this rout not found, please! provide the valid route</h1>
     }
    
   ])

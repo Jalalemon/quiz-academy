@@ -6,10 +6,11 @@ const Header = () => {
         <div className='header-container'>
             <div className='quiz'>Quize Academy</div>
             <div className='header'>
+                
+                <NavLink to='/'>Home </NavLink>
                 <NavLink to='/home'>Topics </NavLink>
                 <NavLink to='/blogs'>Blogs</NavLink>
                 <NavLink to='/statistics'>Statistics</NavLink>
-                <NavLink to='/about'>About</NavLink>
 
             </div>
         </div>
